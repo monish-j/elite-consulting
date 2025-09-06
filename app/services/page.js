@@ -1,6 +1,7 @@
 'use client';
 
 import React from 'react';
+import Image from 'next/image';
 import { Target, TrendingUp, Users, CheckCircle, ArrowRight } from 'lucide-react';
 
 const services = [
@@ -63,9 +64,11 @@ export default function ServicesPage() {
                   </a>
                 </div>
                 <div className={index % 2 === 0 ? 'order-2' : 'order-1'}>
-                  <img 
+                  <Image 
                     src={`https://images.unsplash.com/photo-${index === 0 ? '1454165804606-c3d57bc86b40' : index === 1 ? '1460925895917-afdab827c52f' : '1559136555-9303baea8ebd'}?w=600&h=400&fit=crop`}
                     alt={service.title}
+                    width={600}
+                    height={400}
                     className="w-full rounded-2xl shadow-xl"
                   />
                 </div>

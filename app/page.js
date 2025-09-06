@@ -1,6 +1,7 @@
 'use client';
 
 import React, { useState, useEffect } from 'react';
+import Image from 'next/image';
 import { Users, Target, TrendingUp, CheckCircle, ArrowRight, Star, Quote } from 'lucide-react';
 
 const SmallBusinessWebsite = () => {
@@ -145,9 +146,11 @@ const SmallBusinessWebsite = () => {
               </div>
             </div>
             <div className={`transform transition-all duration-1000 lg:-mt-36 ${isVisible.hero ? 'translate-x-0 opacity-100' : 'translate-x-10 opacity-0'}`}>
-              <img 
+              <Image 
                 src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=800&h=600&fit=crop" 
                 alt="Business consulting" 
+                width={800}
+                height={600}
                 className="w-full rounded-2xl shadow-2xl"
               />
             </div>
@@ -210,9 +213,11 @@ const SmallBusinessWebsite = () => {
                 <Quote className="w-8 h-8 text-blue-600 mb-4" />
                 <p className="text-slate-600 mb-6 leading-relaxed">{testimonial.content}</p>
                 <div className="flex items-center">
-                  <img 
+                  <Image 
                     src={testimonial.image} 
                     alt={testimonial.name}
+                    width={48}
+                    height={48}
                     className="w-12 h-12 rounded-full mr-4"
                   />
                   <div>

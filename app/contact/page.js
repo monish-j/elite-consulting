@@ -12,7 +12,7 @@ export default function ContactPage() {
         <div className="max-w-4xl mx-auto text-center">
           <h1 className="text-5xl md:text-6xl font-bold text-slate-900 mb-6">Get In Touch</h1>
           <p className="text-xl text-slate-600 leading-relaxed">
-            Ready to transform your business? Let's discuss how we can help you achieve your goals.
+            Ready to transform your business? Let&apos;s discuss how we can help you achieve your goals.
           </p>
         </div>
       </section>
@@ -21,7 +21,7 @@ export default function ContactPage() {
         <div className="max-w-7xl mx-auto">
           <div className="grid lg:grid-cols-2 gap-16">
             <div>
-              <h2 className="text-3xl font-bold text-slate-900 mb-8">Let's Start a Conversation</h2>
+              <h2 className="text-3xl font-bold text-slate-900 mb-8">Let&apos;s Start a Conversation</h2>
               <div className="space-y-8 mb-12">
                 <div className="flex items-start space-x-4">
                   <div className="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center">

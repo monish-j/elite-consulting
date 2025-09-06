@@ -1,6 +1,7 @@
 'use client';
 
 import React from 'react';
+import Image from 'next/image';
 import { Linkedin } from 'lucide-react';
 
 const team = [
@@ -51,15 +52,17 @@ export default function AboutPage() {
                 saw the gap between where businesses are and where they could be.
               </p>
               <p className="text-lg text-slate-600 mb-8 leading-relaxed">
-                Today, we've helped over 200 companies across various industries transform their operations, 
+                Today, we&apos;ve helped over 200 companies across various industries transform their operations, 
                 scale efficiently, and achieve sustainable growth. Our methodology combines proven business principles 
-                with innovative approaches tailored to each client's unique challenges.
+                with innovative approaches tailored to each client&apos;s unique challenges.
               </p>
             </div>
             <div>
-              <img 
+              <Image 
                 src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?w=600&h=400&fit=crop" 
                 alt="Team meeting" 
+                width={600}
+                height={400}
                 className="w-full rounded-2xl shadow-xl"
               />
             </div>
@@ -76,9 +79,11 @@ export default function AboutPage() {
           <div className="grid md:grid-cols-3 gap-8">
             {team.map((member, index) => (
               <div key={index} className="bg-white rounded-2xl p-8 shadow-lg text-center">
-                <img 
+                <Image 
                   src={member.image} 
                   alt={member.name}
+                  width={128}
+                  height={128}
                   className="w-32 h-32 rounded-full mx-auto mb-6 object-cover"
                 />
                 <h3 className="text-xl font-bold text-slate-900 mb-2">{member.name}</h3>
